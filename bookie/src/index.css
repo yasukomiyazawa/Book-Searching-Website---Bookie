@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --brown: rgb(42, 0, 0);
+  --maroon: maroon;
+  --pink: rgb(239, 145, 161);
+  --blue: rgb(8, 155, 253);
+  --grey: #f3f3f3;
+  --white: #fff;
+  --black: #010101;
+  --light-black: #717171;
+  --transition: all 300ms ease-in-out;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+}
+
+/* resets */
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+button {
+  outline: 0;
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* backgrounds */
+
+.bg-brown {
+  background-color: var(--brown);
+}
+.bg-pink {
+  background-color: var(--pink);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-grey {
+  background-color: var(--grey);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-black {
+  background-color: var(--black);
+}
+.bg-light-black {
+  background-color: var(--light-black);
+}
+
+/* text */
+
+.text-brown {
+  color: var(--brown);
+}
+.text-maroon {
+  color: var(--maroon);
+}
+
+.text-pink {
+  color: var(--pink);
+}
+.text-blue {
+  color: var(--blue);
+}
+.text-grey {
+  color: var(--grey);
+}
+.text-white {
+  color: var(--white);
+}
+.text-black {
+  color: var(--black);
+}
+.text-light-black {
+  color: var(--light-black);
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-italic {
+  font-style: italic;
+}
+
+/* font weights */
+
+.fw-3 {
+  font-weight: 300;
+}
+.fw-4 {
+  font-weight: 400;
+}
+.fw-5 {
+  font-weight: 500;
+}
+.fw-6 {
+  font-weight: 600;
+}
+.fw-7 {
+  font-weight: 700;
+}
+.fw-8 {
+  font-weight: 800;
+}
+.fw-9 {
+  font-weight: 900;
+}
+
+/* font-sizes */
+
+.fs-15 {
+  font-style: 1.5rem;
+}
+.fs-16 {
+  font-style: 1.6rem;
+}
+.fs-17 {
+  font-style: 1.7rem;
+}
+.fs-18 {
+  font-style: 1.8rem;
+}
+.fs-19 {
+  font-style: 1.9rem;
+}
+.fs-20 {
+  font-style: 2rem;
+}
+.fs-21 {
+  font-style: 2.1rem;
+}
+.fs-22 {
+  font-style: 2.2rem;
+}
+.fs-23 {
+  font-style: 2.3rem;
+}
+.fs-24 {
+  font-style: 2.4rem;
+}
+.fs-25 {
+  font-style: 2.5rem;
+}
+.fs-26 {
+  font-style: 2.6rem;
+}
+
+/* letter spacing */
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+/* flex */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.flex-c {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* section title  */
+
+.section-title h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 18px 0 24px 0;
+}
