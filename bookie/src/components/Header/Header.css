@@ -13,8 +13,8 @@
 }
 
 .header-text {
-  margin-top: -1.8rem;
-  margin-bottom: 2.8rem;
   opacity: 0.8;
-  min-width: 770px;
+  max-width: 770px;
+  text-align: center; /* Center the text */
+  box-sizing: border-box;
 }

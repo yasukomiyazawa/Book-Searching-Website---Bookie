@@ -1,21 +1,22 @@
 import React from "react";
-import CoverImg from "../../images/coverNF.jpg";
-import Book from "../BookList/Book";
 import { useGlobalContext } from "../../content";
+import Book from "../BookList/Book";
 import Loading from "../Loader/Loader";
+import coverImg from "../../images/coverNF.jpg";
 import "./BookList.css";
 
-// https://covers.openlibrary.org/b/id/240727-S.jpg
+//https://covers.openlibrary.org/b/id/240727-S.jpg
 
 const BookList = () => {
   const { books, loading, resultTitle } = useGlobalContext();
   const booksWithCovers = books.map((singleBook) => {
     return {
       ...singleBook,
+      // removing /works/ to get only id
       id: singleBook.id.replace("/works/", ""),
       cover_img: singleBook.cover_id
         ? `https://covers.openlibrary.org/b/id/${singleBook.cover_id}-L.jpg`
-        : CoverImg,
+        : coverImg,
     };
   });
 
@@ -24,7 +25,7 @@ const BookList = () => {
   return (
     <section className="booklist">
       <div className="container">
-        <div className="section section-title">
+        <div className="section-title">
           <h2>{resultTitle}</h2>
         </div>
         <div className="booklist-content grid">

@@ -35,24 +35,31 @@
 .book-item-info-item:not(.book-item-info-item.title) span:last-child {
   opacity: 0.8;
 }
-
 .book-item-info-item.publish-year {
   opacity: 0.6;
   font-style: italic;
   font-size: 14px;
 }
 
-@media (min-width: 600px) {
-  .booklistcontent {
+@media screen and (min-width: 600px) {
+  .booklist-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
+  .booklist-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .book-item-img img {
+    max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .booklist-content {
     grid-template-columns: repeat(4, 1fr);
   }
-
   .book-item-img img {
     max-width: 120px;
   }

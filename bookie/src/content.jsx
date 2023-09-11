@@ -4,7 +4,7 @@ const URL = "http://openlibrary.org/search.json?title=";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [searchTerm, setSearchTerm] = useState("The Alchemist");
+  const [searchTerm, setSearchTerm] = useState("the lost world");
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [resultTitle, setResultTitle] = useState("");
