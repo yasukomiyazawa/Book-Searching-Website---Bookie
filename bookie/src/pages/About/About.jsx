@@ -31,8 +31,7 @@ const About = () => {
               your chosen titles, from summaries to author backgrounds, allowing
               you to make informed reading choices and engage in lively
               discussions about your favorites. Join us on this literary journey
-              today, where every book is a story waiting to be explored at
-              Bookie!
+              today, where every book is a story waiting to be explored here!
             </p>
           </div>
         </div>
