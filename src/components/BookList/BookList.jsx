@@ -34,6 +34,9 @@ const BookList = () => {
           })}
         </div>
       </div>
+      <div className="credit">
+        Created By Yasuko Miyazawa | All Rights Reserved.
+      </div>
     </section>
   );
 };
